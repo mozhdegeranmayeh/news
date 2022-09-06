@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>mozhde news website</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Raleway", sans-serif;
+      }
+
+      a:link {
+        text-decoration: none;
+      }
+
+      a.button {
+        display: inline-block;
+        padding: 0.5em 2em;
+        background-color: #088;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 0.2em;
+        border-bottom: 2px solid #044;
+      }
+
+      a.button:hover {
+        background-color: #0aa;
+        border-bottom-color: #088;
+      }
+
+     
+    </style>
+  </head>
+  <body class="w3-light-grey w3-content" style="max-width: 1600px">
+    <!-- Sidebar/menu -->
+    <nav
+      class="w3-sidebar w3-collapse w3-white w3-animate-left"
+      style="z-index: 3; width: 300px"
+      id="mySidebar"
+    >
+      <br />
+      <div class="w3-container">
+        <a
+          href="#"
+          onclick="w3_close()"
+          class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+          title="close menu"
+        >
+          <i class="fa fa-remove"></i>
+        </a>
+        <img src="img/7.jfif" style="width: 45%" class="w3-round" /><br /><br />
+        <h4><b>My news website</b></h4>
+        <p class="w3-text-grey">Menu</p>
+      </div>
+
+      <div class="w3-bar-block">
+        <a href="#c0">
+         
+        <a
+          href="https://covid19.who.int/"
+          target="iframe-a"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-padding w3-text-teal"
+          >
+          Covid-19
+          </a
+        >
+      
+      </a>
+      <a href="#c0">
+        <a
+          href="https://www.business-standard.com/topic/online-business"
+          target="iframe-a"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-padding w3-text-teal"
+          >Business</a
+        >
+      </a>
+        <a
+          href="https://scitechdaily.com/news/technology/"
+          target="iframe-a"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-padding w3-text-teal"
+          >Technology</a
+        >
+        <a
+          href="https://www.euronews.com/news/sport"
+          target="iframe-a"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-padding w3-text-teal"
+          >Sports</a
+        >
+        <a
+          href="https://www.accuweather.com/en/weather-news"
+          target="iframe-a"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-padding w3-text-teal"
+          >Weather</a
+        >
+        <a
+          href="https://news.sky.com/world"
+          target="iframe-a"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-padding w3-text-teal"
+          >World</a
+        >
+      </div>
+      <div class="w3-panel w3-large">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </div>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div
+      class="w3-overlay w3-hide-large w3-animate-opacity"
+      onclick="w3_close()"
+      style="cursor: pointer"
+      title="close side menu"
+      id="myOverlay"
+    ></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left: 300px">
+      <!-- Header -->
+      <header id="portfolio">
+        <a href="#"
+          ><img
+            src="/w3images/avatar_g2.jpg"
+            style="width: 65px"
+            class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"
+        /></a>
+        <span
+          class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey"
+          onclick="w3_open()"
+          ><i class="fa fa-bars"></i
+        ></span>
+        <div class="w3-container">
+          <h1><b>My News website</b></h1>
+          <div class="w3-section w3-bottombar w3-padding-16">
+            <span class="w3-margin-right">Filter:</span>
+            <button class="w3-button w3-black">ALL</button>
+            <button class="w3-button w3-white">
+              <a href="#c1">political</a>
+            </button>
+            <button class="w3-button w3-white w3-hide-small">
+              <a href="#c2">Economy</a>
+            </button>
+            <button class="w3-button w3-white w3-hide-small">
+              <a href="#c3">Society</a>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- First Photo Grid-->
+
+      <div class="w3-container w3-padding-large" style="margin-bottom: 32px">
+        <h4><b>Titles</b></h4>
+
+      <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img
+            src="img/1.jfif"
+            alt="Norway"
+            style="width: 100%"
+            class="w3-hover-opacity"
+          />
+
+          
+          <div class="w3-container w3-white">
+            <p><b>Covid-19</b></p>
+            <p>See the latest coverage of the coronavirus.
+             
+            </p>
+          </div>
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img
+            src="img/2.jfif"
+            alt="Norway"
+            style="width: 100%"
+            class="w3-hover-opacity"
+          />
+          <div class="w3-container w3-white">
+            <p><b>Business</b></p>
+            <p>See the latest coverage of the Business.
+             
+            </p>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <img
+            src="img/3.jfif"
+            alt="Norway"
+            style="width: 100%"
+            class="w3-hover-opacity"
+          />
+          <div class="w3-container w3-white">
+            <p><b>Technology</b></p>
+            <p>See the latest coverage of the Technology.
+              
+              
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Photo Grid-->
+      <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img
+            src="img/4.jfif"
+            alt="Norway"
+            style="width: 100%"
+            class="w3-hover-opacity"
+          />
+          <div class="w3-container w3-white">
+            <p><b>Sports</b></p>
+            <p>See the latest coverage of the Sports.
+             
+              
+            </p>
+          </div>
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img
+            src="img/5.jfif"
+            alt="Norway"
+            style="width: 100%"
+            class="w3-hover-opacity"
+          />
+          <div class="w3-container w3-white">
+            <p><b>Weather</b></p>
+            <p>See the latest coverage of the weather.
+             
+              
+            </p>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <img
+            src="img/6.jfif"
+            alt="Norway"
+            style="width: 100%"
+            class="w3-hover-opacity"
+          />
+          <div class="w3-container w3-white">
+            <p><b>World</b></p>
+            <p>See the latest coverage of the weather.
+              
+              
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-container w3-padding-large" style="margin-bottom: 32px">
+        <h4 id="c0"><b>How to use My site</b></h4>
+        <p>
+          Get informed about the news and events of the world in political,
+          social, scientific and... completely free of charge.<br />
+          click on Get news for search your own title of news or click In the box below.<br />
+          click on the items of menu to find the subject In the box below.
+        </p>
+        <hr />
+
+        <!-- iframe -->
+        <div class="w3-row-padding w3-padding-16" id="about">
+          <div class="w3-col m12">
+            <iframe src="index2.html" width="1100" height="400" name="iframe-a"></iframe>
+          </div>
+        </div>
+
+        <hr />
+
+        <h4 >Other title of the News</h4>
+        <!-- Pricing Tables -->
+        <div class="w3-row-padding" style="margin: 0 -16px">
+          <div class="w3-third w3-margin-bottom">
+            <ul
+              class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off"
+            >
+              <li class="w3-black w3-xlarge w3-padding-32" id="c1">
+                political
+              </li>
+              <li class="w3-padding-16">Iran</li>
+              <li class="w3-padding-16">Us</li>
+              <li class="w3-padding-16">Europe</li>
+              <li class="w3-padding-16">Africa</li>
+
+              <li class="w3-light-grey w3-padding-24">
+                <a href="index2.html" class="button"> Get news</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="w3-third w3-margin-bottom">
+            <ul
+              class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off"
+            >
+              <li class="w3-teal w3-xlarge w3-padding-32" id="c2">Economy</li>
+              <li class="w3-padding-16">Exchange</li>
+              <li class="w3-padding-16">Bitcoin</li>
+              <li class="w3-padding-16">Crude oil</li>
+              <li class="w3-padding-16">Gold</li>
+
+              <li class="w3-light-grey w3-padding-24">
+                <a href="index2.html" class="button"> Get news</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="w3-third">
+            <ul
+              class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off"
+            >
+              <li class="w3-black w3-xlarge w3-padding-32" id="c3">Society</li>
+              <li class="w3-padding-16">legal</li>
+              <li class="w3-padding-16">Education</li>
+              <li class="w3-padding-16">the environment</li>
+              <li class="w3-padding-16">Prosperity</li>
+
+              <li class="w3-light-grey w3-padding-24">
+                <a href="index2.html" class="button"> Get news</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="w3-container w3-padding-32 w3-dark-grey">
+        <div class="w3-row-padding">
+          <div class="w3-third">
+            <h3>FOOTER</h3>
+            <p>Real News</p>
+          </div>
+
+          <div class="w3-third">
+            <h3>BLOG POSTS</h3>
+            <ul class="w3-ul w3-hoverable">
+              <li class="w3-padding-16">
+                <img
+                  src="img/7.jfif"
+                  class="w3-left w3-margin-right"
+                  style="width: 50px"
+                />
+                <span class="w3-large">Blog</span><br />
+                <span>news</span>
+              </li>
+              <li class="w3-padding-16">
+                <img
+                  src="img/7.jfif"
+                  class="w3-left w3-margin-right"
+                  style="width: 50px"
+                />
+                <span class="w3-large">Ipsum</span><br />
+                <span>news</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="w3-third">
+            <h3>POPULAR TAGS</h3>
+            <p>
+              <span class="w3-tag w3-black w3-margin-bottom">Travel</span>
+              <span class="w3-tag w3-grey w3-small w3-margin-bottom"
+                >New York</span
+              >
+              <span class="w3-tag w3-grey w3-small w3-margin-bottom"
+                >London</span
+              >
+              <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span>
+              <span class="w3-tag w3-grey w3-small w3-margin-bottom"
+                >NORWAY</span
+              >
+              <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+              <span class="w3-tag w3-grey w3-small w3-margin-bottom"
+                >Ideas</span
+              >
+              <span class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span>
+              <span class="w3-tag w3-grey w3-small w3-margin-bottom"
+                >Family</span
+              >
+              <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span>
+              <span class="w3-tag w3-grey w3-small w3-margin-bottom"
+                >Clothing</span
+              >
+              <span class="w3-tag w3-grey w3-small w3-margin-bottom"
+                >Shopping</span
+              >
+              <span class="w3-tag w3-grey w3-small w3-margin-bottom"
+                >Sports</span
+              >
+              <span class="w3-tag w3-grey w3-small w3-margin-bottom"
+                >Games</span
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
+
+      <div class="w3-black w3-center w3-padding-24">
+       
+        <a
+          href="mailto:mojdehgeranmayeh00075@gmail.com"
+          title=""
+          target="_blank"
+          class="w3-hover-opacity"
+          >Send email</a
+        >
+      </div>
+
+      <!-- End page content -->
+    </div>
+
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+      const url =
+        "https://newsapi.org/v2/everything?q=bitcoin&apiKey=2ca2bf08db904363b312125cfa909d2e";
+      fetch(url)
+        .then((response) => {
+          return response.json();
+        })
+        .then((response) => {
+          console.log(response);
+        });
+    </script>
+  </body>
+</html>
